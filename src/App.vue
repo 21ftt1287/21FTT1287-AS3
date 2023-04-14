@@ -17,7 +17,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
         <div class="p-4 md:p-12 text-center lg:text-left">
             <!-- Image for mobile view-->
-            <div><img src="../assets/DD.jpg" class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover "></div>
+            <div><img src="../src/assets/ME.jpg" height="100px" class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover "></div>
 
             <h1 class="text-3xl font-bold pt-8 lg:pt-0">Barzun Zakwan</h1>
             <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-emerald-500 opacity-25"></div>
@@ -33,7 +33,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
     <!--Img Col-->
     <div class="w-full lg:w-2/5">
-        <img src="../assets/DD.jpg" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block transform scale-105">
+        <img src="../src/assets/ME.jpg" height="100px" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block transform scale-105">
     </div>
 
 </div>
