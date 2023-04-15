@@ -7,41 +7,143 @@ import HelloWorld from './components/HelloWorld.vue'
 
 
 
-<body class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover" style="background-image:url('https://source.unsplash.com/1L71sPT5XKc');">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/img/apple-icon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+    />
+    <title>Profile | Tailwind Starter Kit by Creative Tim</title>
+  </head>
+  <body class="text-gray-800 antialiased">
 
-
-
-  <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto  lg:my-0 ">
-    <!--Main Col-->
-    <div id="profile" class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-100 mx-6 lg:mx-0">
-
-        <div class="p-4 md:p-12 text-center lg:text-left">
-            <!-- Image for mobile view-->
-            <div><img src="../src/assets/ME.jpg" height="100px" class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover "></div>
-
-            <h1 class="text-3xl font-bold pt-8 lg:pt-0">Barzun Zakwan</h1>
-            <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-emerald-500 opacity-25"></div>
-            <p class="pt-3 text-base font-bold flex items-center justify-center lg:justify-start">Student ID: </p>
-            <p class="pt-2 text-base font-bold lg:text-sm flex items-center justify-center lg:justify-start">Group Code: DWDT07</p>
-            <p class="pt-8 text-sm">I am a student from Politeknik Brunei taking Web Development course. 
-            I am currently i my 4th semester of learning and have started doing our final year project. 
-            The project is called Market, it is an application that lets users buy, sell or browse certain items.
-            </p>
+    <main class="profile-page">
+      <section class="relative block" style="height: 500px;">
+        <div
+          class="absolute top-0 w-full h-full bg-center bg-cover"
+          style='background-image: url("https://i.pinimg.com/originals/a4/3e/8b/a43e8b638467ea5d44de55b72a353c1c.jpg");'
+        >
+          <span
+            id="blackOverlay"
+            class="w-full h-full absolute opacity-50 bg-black"
+          ></span>
         </div>
+        <div
+          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+          style="height: 70px;"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-gray-300 fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+      </section>
+      <section class="relative py-16 bg-gray-300">
+        <div class="container mx-auto px-4">
+          <div
+            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64"
+          >
+            <div class="px-6">
+              <div class="flex flex-wrap justify-center">
+                <div
+                  class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center"
+                >
+                  <div class="relative">
+                    <img
+                      alt="..."
+                      src="./assets/ME.jpg"
+                      class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+                      style="max-width: 150px;"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center"
+                >
+                  <div class="py-6 px-3 mt-32 sm:mt-0">
+                    
+                  </div>
+                </div>
+                <div class="w-full lg:w-4/12 px-4 lg:order-1">
+                  <div class="flex justify-center py-4 lg:pt-4 pt-8">
+                    <div class="mr-4 p-3 text-center">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center mt-12">
+                <h3
+                  class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2"
+                >
+                  Barzun Zakwan
+                </h3>
+                <div
+                  class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase"
+                >
+                  <i
+                    class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"
+                  ></i>
+                  Brunei Darussalam
+                </div>
+                <div class="mb-2 text-gray-700 mt-10">
+                  <i class="fas fa-briefcase mr-2 text-lg text-gray-500"></i
+                  >Web Developer
+                </div>
+                <div class="mb-2 text-gray-700">
+                  <i class="fas fa-university mr-2 text-lg text-gray-500"></i
+                  >Politeknik Brunei
+                </div>
+              </div>
+              <div class="mt-10 py-10 border-t border-gray-300 text-center">
+                <div class="flex flex-wrap justify-center">
+                  <div class="w-full lg:w-9/12 px-4">
+                    <p class="mb-4 text-lg leading-relaxed text-gray-800">
+                      I am a student from Politeknik Brunei taking Web Development course. 
+                      I am currently i my 4th semester of learning and have started doing our final year project. 
+                      The project is called Market, it is an application that lets users buy, sell or browse certain items.
+                      <br>
+                      <br>
+                      Shop at Dannyduncan69.com to win a tesla with horns!
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+  </body>
+  
+</html>
 
-    </div>
-
-    <!--Img Col-->
-    <div class="w-full lg:w-2/5">
-        <img src="../src/assets/ME.jpg" height="100px" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block transform scale-105">
-    </div>
-
-</div>
-
-
-	
-	
-</body>
 
 
   
